@@ -1,0 +1,28 @@
+ćwiczenie nr. 2 - OTOCZKA WYPUKŁA W ZBIORZE PUNKTÓW 2D
+
+Zadanie polegało na zaimplementowaniu algorytmów Grahama i Jarvisa, dla konkretnych zbiorów punktów wraz z ich wizualizacją „krok po kroku”, zapisaniu wyników do pliku oraz zmierzeniu czasu działania.
+
+Zbiory które należało zbadać mogły sprawiać trudności w przyporządkowaniu punktów do otoczki: 
+
+1. Zbiór punktów na okręgu : wszystkie punkty powinny należeć do otoczki
+2. Zbiór punktów na prostokącie : wiele punktów leży na jednej prostej(powinny zostać wybrane tylko skrajne)
+3. Zbiór z przekątnymi : wiele punktów tworzy ten sam kąt z punktem o najmniejszej współrzędnej i osią OX.
+
+Sprawdzenie wszystkich tych zbiorów zagwarantowało że algorytmy działają poprawnie.
+
+Porównujac czasy widać lekką przewagę Grahama.
+
+Graham :
+1.	0.0008709430694580078
+2.	0.0008289813995361328
+3.	0.0013828277587890625
+4.	0.0019290447235107422
+
+Jarvis :
+1.	0.0019481182098388672
+2.	0.013647794723510742
+3.	0.0015630722045898438
+4.	0.0008051395416259766
+
+
+Oba algorytmy działają poprawni dla problemu wyszukiwania otoczki wypukłej zbioru punktów, przy zastosowaniu odpowiedniej dokładności epsilon przy wyznaczaniu wyznacznika(zastosowałam wyznacznik 3x3 , wnioskując po poprzednich laboratoriach ze jest on bardziej precyzyjny)
