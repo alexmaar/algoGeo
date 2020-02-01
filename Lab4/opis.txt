@@ -1,0 +1,7 @@
+Procedura sprawdzająca czy wielokąt jest y-monotoniczny wykorzystuje klasyfikacje wierzchołków wielokąta na : startowy, końcowy, dzielący, łączący oraz normalny. Wielokąt bez wierzchołków łączących i dzielących jest y-monotoniczny.
+
+Triangulacja wielokąta : korzystamy ze stosu, wierzchołki są posortowane względem współrzędnej y. Jeśli dwa wierzchołki nie należą do tego samego łańcucha, tworzymy krawędzie między wszystkimi wierzchołkami na stosie i dodajemy aktualnie przetwarzany wierzchołek. Jeśli należą do tego samego łańcucha, zdejmujemy szczytowy wierzchołek stosu i dopóki krawędź aktualny wierzchołek-szczyt stosu należy do wielokąta , dodajemy przekątną.
+
+
+Przetestowano zestawy gdzie wierzchołki należą do tego samego łańcucha(obustronnie) , oraz naprzemiennie .
+

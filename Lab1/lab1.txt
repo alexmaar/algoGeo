@@ -1,0 +1,30 @@
+Lab 1
+
+W zadaniu stworzyłam funkcje losujące punkty z zadanych przedziałów, na okręgu oraz lini.  Wygenerowane punkty wpisywane są do tablic. Zbiory punktów przedstawione zostały na kolejnych wykresach.
+Następnie zaimplementowałam funkcję obliczającą wyznacznik macierzy na dwa sposoby oraz funkcje klasyfikującą wylosowane punkty ze względu na orientację względem zadanego odcinka ab, a = [-1.0, 0.0], b = [1.0, 0.1].
+W zależności od sposobu liczenia(wyznacznika) podział punktów różnił się. Różnice zostały przedstawione i wypisane po wykresami każdego z przykładów.
+
+Wyniki zbadałam dla różnych precyzji obliczeń :
+
+10^5 losowych punktów o współrzędnych z przedziału [-1000, 1000]
+	a. epsilon = 0.01
+	b. epsilon = 0.1
+	c. epsilon = 1
+	d. epsilon = 10
+
+2. 10^5 losowych punktów o współrzędnych z przedziału [-1014, 1014]
+	a. epsilon = 0.01
+	b. epsilon = 1000
+	c. epsilon = 10 ^ 15
+	
+
+3. 1000 losowych punktów leżących na okręgu o środku (0,0) i promieniu R=100
+	a. epsilon = 0.01
+	b. epsilon = 0.01
+	c. epsilon = 25
+	d. epsilon = 1000
+
+4.  1000 losowych punktów o współrzędnych z przedziału [-1000, 1000] leżących na prostej wyznaczonej przez wektor (a, b), przyjmij a = [-1.0, 0.0], b = [1.0, 0.1]
+	a. epsilon = 0.001
+	b. epsilon = 10 ^ (-20)
+	
